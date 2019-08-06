@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/confirm_back">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_490"
+        android:layout_height="@dimen/dp_535"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_login_relativelayout_background">
+
+        <TextView
+            android:id="@+id/tv_confirm_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_22"
+            android:text="@string/confirm_user_intfo_text"
+            android:textColor="@color/colorred"
+            android:textSize="@dimen/sp_18" />
+
+
+        <!--学校-->
+
+        <RelativeLayout
+            android:id="@+id/rl_confirm_school"
+            android:layout_width="@dimen/dp_368"
+            android:layout_height="@dimen/dp_53"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_65"
+            android:background="@drawable/ed_shape">
+
+            <ImageView
+                android:id="@+id/iv_confirm_school_icon"
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/confirm_school_icon" />
+
+            <TextView
+                android:id="@+id/tv_confirm_school"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_confirm_school_icon"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_24" />
+        </RelativeLayout>
+
+
+        <!--年级
+        <TextView
+            android:id="@+id/tv_confirm_grade"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_46"
+            android:layout_below="@+id/tv_confirm_school"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/ed_shape"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/sp_24" />-->
+
+
+        <!--桌号-->
+        <RelativeLayout
+            android:id="@+id/rl_confirm_candidate_number"
+            android:layout_width="@dimen/dp_368"
+            android:layout_height="@dimen/dp_53"
+            android:layout_below="@+id/rl_confirm_school"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_18"
+            android:background="@drawable/ed_shape">
+
+            <ImageView
+                android:id="@+id/iv_confirm_candidate_number"
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/confirm_candidate_number_icon" />
+
+            <TextView
+                android:id="@+id/tv_confirm_candidate_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/iv_confirm_candidate_number"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_24" />
+        </RelativeLayout>
+
+        <!--姓名-->
+
+        <RelativeLayout
+            android:id="@+id/rl_confirm_school_candidate_number"
+            android:layout_width="@dimen/dp_368"
+            android:layout_height="@dimen/dp_53"
+            android:layout_below="@+id/rl_confirm_candidate_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_18"
+            android:background="@drawable/ed_shape">
+
+            <ImageView
+                android:id="@+id/iv_confirm_name"
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/confirm_name_icon" />
+
+            <TextView
+                android:id="@+id/tv_confirm_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/iv_confirm_name"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_24" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_confirm_school_candidate_number"
+            android:layout_alignLeft="@+id/rl_confirm_school_candidate_number"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="请确认无误后点击确认"
+            android:textColor="@color/colorred"
+            android:textSize="@dimen/sp_16" />
+
+
+        <!--确认and重登按钮-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_confirm_school_candidate_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_110">
+
+
+            <Button
+                android:id="@+id/btn_confirm_login_again"
+                android:layout_width="@dimen/dp_124"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_50"
+                android:background="@drawable/selector_confirm_try_1"
+                />
+
+
+            <Button
+                android:id="@+id/btn_confirm_confirm"
+                android:layout_width="@dimen/dp_124"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_50"
+                android:background="@drawable/selector_answer_submit" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/confirm_websocket_status"
+        android:layout_width="@dimen/dp_10"
+        android:layout_height="@dimen/dp_10" />
+</RelativeLayout>

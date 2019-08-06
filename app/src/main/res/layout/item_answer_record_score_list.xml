@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/item_answer_record_score_list_question_num_rl"
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_35"
+            android:background="@drawable/shape_item_answer_record_score_listt_bg_1">
+
+            <TextView
+                android:id="@+id/item_answer_record_score_list_question_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="题号"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_answer_record_score_list_correct_answer_rl"
+            android:layout_width="@dimen/dp_125"
+            android:layout_height="@dimen/dp_35"
+            android:background="@drawable/shape_item_answer_record_score_listt_bg_1">
+
+            <TextView
+                android:id="@+id/item_answer_record_score_list_correct_answer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="正确答案"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_answer_record_score_list_user_answer_rl"
+            android:layout_width="@dimen/dp_125"
+            android:layout_height="@dimen/dp_35"
+            android:background="@drawable/shape_item_answer_record_score_listt_bg_1">
+
+            <TextView
+                android:id="@+id/item_answer_record_score_list_user_answer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="我的答案"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_answer_record_score_list_result_rl"
+            android:layout_width="@dimen/dp_125"
+            android:layout_height="@dimen/dp_35"
+            android:background="@drawable/shape_item_answer_record_score_listt_bg_1">
+
+            <ImageView
+                android:id="@+id/item_answer_record_score_list_result_iv"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/item_answer_record_score_list_result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="结果"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wait_back">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_470"
+        android:layout_height="@dimen/dp_144"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_11"
+        android:background="@drawable/user_title_bg">
+        <!--<RelativeLayout
+
+            android:layout_width="@dimen/dp_584"
+            android:layout_height="@dimen/dp_143"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/wait_title01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/wait_title_01" />
+
+            <ImageView
+                android:id="@+id/wait_title02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wait_title01"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/wait_title_02" />
+    -->
+        <TextView
+            android:id="@+id/wait_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_23"
+            android:gravity="left"
+            android:text="姓名:"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_17" />
+
+        <TextView
+            android:id="@+id/wait_candidate_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wait_name"
+            android:layout_alignLeft="@+id/wait_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_14"
+            android:gravity="left"
+            android:text="桌号:"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_17" />
+
+        <TextView
+            android:id="@+id/wait_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wait_candidate_number"
+            android:layout_alignLeft="@+id/wait_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_14"
+            android:gravity="left"
+            android:text="学校:"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_17" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/wait_loding_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/wait_logo" />
+
+
+        <TextView
+
+            android:id="@+id/wait_wait_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wait_loding_image"
+            android:layout_marginTop="@dimen/dp_37"
+            android:text="请等待考试开始..."
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_38" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/wait_websocket_status"
+        android:layout_width="@dimen/dp_10"
+        android:layout_height="@dimen/dp_10" />
+
+    <Button
+        android:id="@+id/wait_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="退出" />
+</RelativeLayout>
